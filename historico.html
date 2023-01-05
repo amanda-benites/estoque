@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="historico.css">
+    <link rel="sortcut icon" href="img/logo_site.png" type="image/png" />   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />    
+    <link rel="stylesheet" href="historico.css">
+    <title>Histórico</title>
+</head>
+
+<body>
+    <div class="containerA">
+        <div class="cabecalho">
+          <div>
+            <img class="imghead1" src="img/logo_senac.png" alt="menu" width="12%" height="75%">
+          </div>
+
+          <div class="dropdown">
+            <button type="button" class="botao" data-bs-toggle="dropdown" aria-expanded="false"><img src="img/menu.png" alt="menu" width="8%" height="60%"></button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="tabela.html"><i class="bi bi-file-text font_icon"></i> Relatório</a></li>
+              <li><a class="dropdown-item" href="editar.html"><i class="bi bi-person"></i> Editar usuário</a></li>
+              <li><a class="dropdown-item" href="criar.html"><i class="bi bi-person"></i> Criar usuário</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalSair" data-bs-whatever="@mdo"><button class="sair"><i class="bi bi-box-arrow-left"></i> Sair </button></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="modal fade" id="modalSair" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="head-er">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body1">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Deseja sair da conta?</h1>
+              </div>
+              <div class="foot-er">
+                <button type="button" class="btn btn-secondary esquerda1" data-bs-dismiss="modal">Não</button>
+                <button type="button" class="btn btn-primary direita1"><a class="dropdown-item" href="login.html">Sim</a></li></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="linha1"></div>
+        <div class="tabela">
+          <div class="orgtab table-responsive redondo">
+            <div class="titulo">
+              <h3>
+                Histórico
+              </h3>
+            </div>
+            <div>
+              <button class="download" data-bs-toggle="modal" data-bs-target="#modalDownload"><img src="img/download.png" alt="realizar download" width="8%" height="60%"></button>
+            </div>
+
+            <!-- Modal 1 -->
+            <div class="modal fade" id="modalDownload" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="head-er">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Deseja realizar exportação em PDF?</h1>
+                    <br>
+                    <h1 class="bigsize">... <img src="img/truck.svg" class="caminhao" alt="caminhão"></h1>
+                  </div>
+                  <div class="foot-er">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
+                    <button type="button" class="btn btn-primary">Sim</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pesquisar -->
+            <div class="container-fluid">
+              <button class="pesquisar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"><img src="img/lupa.png" alt="pesquisar itens" width="8%" height="60%">
+              </button>
+
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Pesquisar</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Nome do item" aria-label="Search">
+                  </form>
+                  <form class="d-flex mt-3" role="search">
+                   <input class="form-control me-2" type="search" placeholder="Nº do armário" aria-label="Search">
+                 </form>
+                 <form class="d-flex mt-3" role="search">
+                   <input class="form-control me-2" type="search" placeholder="Quantidade" aria-label="Search">
+                 </form>
+                 <form class="d-flex mt-3" role="search">
+                   <input class="form-control me-2" type="search" id="calendario" placeholder="Data de cadastro" aria-label="Search">
+                 </form>
+                 <form class="d-flex mt-3" role="search">
+                   <input class="form-control me-2" type="search" id="calendario2" placeholder="Data de validade" aria-label="Search">
+                 </form>
+                 <form class="d-flex mt-3" role="search">
+                   <input class="form-control me-2" type="search" placeholder="Observação técnica" aria-label="Search">
+                 </form>
+                 <div class="foot-er2">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas" aria-label="Close">Cancelar</button>
+                  <button type="button" class="btn btn-primary">Pesquisar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <table class="table table-light table-sm table-hover opacidade">
+                <thead class="table-light">
+                  <tr>
+                    <th scope="col">Nome do item</th>
+                    <th scope="col">Nome do usuário</th>
+                    <th scope="col">Observação técnica</th>
+                    <th scope="col">Nº do armário</th>
+                    <th scope="col">Data de cadastro</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Item 1</th>
+                    <td>C01</td>
+                    <td>20</td>
+                    <td>20/10/2022</td>
+                    <td>20/12/2022</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Item 2</th>
+                    <td>C02</td>
+                    <td>5</td>
+                    <td>20/10/2022</td>
+                    <td>29/10/2022</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Item 3</th>
+                    <td>C03</td>
+                    <td>37</td>
+                    <td>20/10/2022</td>
+                    <td>01/01/2023</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Item 4</th>
+                    <td>C04</td>
+                    <td>22</td>
+                    <td>20/10/2022</td>
+                    <td>20/06/2023</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Item 5</th>
+                    <td>C05</td>
+                    <td>15</td>
+                    <td>20/10/2022</td>
+                    <td>15/11/2023</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Item 6</th>
+                    <td>C06</td>
+                    <td>2</td>
+                    <td>20/10/2022</td>
+                    <td>20/11/2022</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Item 7</th>
+                    <td>C07</td>
+                    <td>102</td>
+                    <td>20/10/2022</td>
+                    <td>11/11/2023</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Item 8</th>
+                    <td>C08</td>
+                    <td>41</td>
+                    <td>20/10/2022</td>
+                    <td>17/03/2023</td>
+                  </tr>
+                </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="linha2"></div>
+        <div class="rodape"></div>
+    </div>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+<script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+
+<script>
+  $(function() {
+      $( "#calendario" ).datepicker({
+        changeMonth: true,
+        changeYear: true,        
+        showOn: "button",
+        buttonImage: "img/calendar-event.svg",
+        buttonImageOnly: true,
+
+        dateFormat: 'dd/mm/yy',
+        dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado','Domingo'],
+        dayNamesMin: ['D','S','T','Q','Q','S','S','D'],
+        dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
+        monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+        monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez']
+      });
+      
+  });
+
+  $(function() {
+      $( "#calendario2" ).datepicker({
+        changeMonth: true,
+        changeYear: true,
+        showOn: "button",
+        buttonImage: "img/calendar-event.svg",
+        buttonImageOnly: true,
+
+        dateFormat: 'dd/mm/yy',
+        dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado','Domingo'],
+        dayNamesMin: ['D','S','T','Q','Q','S','S','D'],
+        dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
+        monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+        monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez']
+      });
+      
+  });
+</script>
+</body>
+</html>

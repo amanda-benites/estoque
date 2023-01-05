@@ -1,0 +1,102 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+.containerA {
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows:8.5vh 2.4vh 79vh 1.6vh 8.5vh;
+    grid-template-areas:"header header"
+                        "linha1 linha1"
+                        "imagem login"
+                        "linha2 linha2"
+                        "footer footer";
+}
+
+.header {
+    grid-area: header;
+    background-color:rgb(255, 255, 255);
+}
+
+.linha1 {
+    grid-area: linha1;
+    background-color: #f8861b;
+}
+
+.imagem {
+    grid-area: imagem;
+    background-color: rgb(255, 255, 255);
+}
+
+.login {
+    grid-area: login;
+    background-color: rgb(255, 255, 255);
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.linha2 {
+    grid-area: linha2;
+    background-color:#F77D0C;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #004990;
+}
+
+.formulario {
+    border: #D2D2D2;
+	border-radius: 10px;
+    border-style: solid;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 5%;
+    width: 85%;
+    height: 78%;
+}
+
+/* .conta {
+    border: none;
+    background-color: white;
+    color: #004990;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    place-items: center;
+    float: center;
+    font-weight: bold;
+    margin-right: 30%;
+    margin-left: 40%;
+} */
+
+.borda {
+    margin-bottom: 5%;
+}
+
+.bordacima {
+    margin-top: 3%;
+    background-color:#004990;
+}
+
+.tamanho {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 66%;
+    height: 94%;
+}
+
+.tamanhohead {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+.tam_ic {
+    height: 10vh;
+}

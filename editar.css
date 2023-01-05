@@ -1,0 +1,153 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+.containerA {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8.5vh 2.4vh 79vh 1.6vh 8.5vh;
+    grid-template-areas:"cabecalho"
+                        "linha1"
+                        "meio" 
+                        "linha2"
+                        "rodape";
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+}
+
+.linha1 {
+    grid-area: linha1;
+    background-color: #F77D0C;
+}
+
+.meio {
+    grid-area: meio;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.formulario {
+    border: #D2D2D2;
+	border-radius: 10px;
+    border-style: solid;
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    padding-right: 5%;
+    width: 80%;
+    height: 90%;
+    margin-left: 10%;
+    margin-right: 10%;
+    vertical-align: middle;
+}
+
+
+.linha2 {
+    grid-area: linha2;
+    background-color:#F77D0C;
+}
+
+.rodape {
+    grid-area: rodape;
+    background-color: #004990;
+}
+
+.imghead1 {
+    margin-top: 0.3%;
+    margin-bottom: 0.5%;
+    margin-left: 2%;
+    width: 5.5%;
+    height: 7%;
+    display: flex;
+    float: left;
+}
+
+.tam_formu {
+    width: 100%;
+}
+
+.tam_ic {
+    height: 10vh;
+}
+
+.botao {
+    background-color: transparent;
+    border: none;
+    margin-top: 0.8%;
+    margin-bottom: 0.5%;
+    margin-right: 2%;
+    width: 50%;
+    height: 50%;
+    float: right;
+    text-align: right;
+}
+
+.dropdown-menu {
+    --bs-dropdown-color: #212529;
+    --bs-dropdown-bg: #004990;
+    --bs-dropdown-link-color: white;
+    --bs-dropdown-link-hover-color: white;
+    --bs-dropdown-link-hover-bg: #F77D0C;
+    --bs-dropdown-link-active-color: #fff;
+}
+
+.logout {
+    background-color: transparent;
+    border: transparent;
+    border-color: transparent;
+    color: white;
+}
+
+.modal-body1 {
+    position: relative;
+    padding: var(--bs-modal-padding);
+    float: center;
+    text-align: center;
+}
+
+.direita1 {
+    margin-right: 10%;
+}
+
+.esquerda1 {
+    margin-left: 28%;
+}
+
+.btn-secondary {
+    --bs-btn-color: #F77D0C;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: #F77D0C;
+    --bs-btn-hover-color: #004990;
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-hover-border-color: #004990;
+    margin-right: 4%;
+    padding-right: 7%;
+    padding-left: 7%;
+}
+.btn-primary {
+    --bs-btn-bg: #F77D0C;
+    --bs-btn-border-color: #F77D0C;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #004990;
+    --bs-btn-hover-border-color: #004990;
+    margin-left: 0%;
+    padding-right: 7%;
+    padding-left: 7%;
+}
+
+.foot-er {
+    padding-bottom: 5%;
+    padding-top: 4%;
+}
+.head-er {
+    float: right;
+    text-align: right;
+    padding-top: 2%;
+    padding-right: 2%;
+    color: black;
+}

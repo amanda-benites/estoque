@@ -1,0 +1,249 @@
+html, body {
+    margin: 0;
+    font-family: 'Arial';
+}
+
+.containerA {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:8.5vh 2.4vh 79vh 1.6vh 8.5vh;
+    grid-template-areas:"cabecalho"
+                        "linha1"
+                        "titulo2" 
+                        "linha2"
+                        "rodape";
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+}
+
+.linha1 {
+    grid-area: linha1;
+    background-color: #F77D0C;
+}
+
+.linha2 {
+    grid-area: linha2;
+    background-color:#F77D0C;
+}
+
+.rodape {
+    grid-area: rodape;
+    background-color: #004990;
+}
+
+.imghead1 {
+    margin-top: 0.3%;
+    margin-bottom: 0.5%;
+    margin-left: 2%;
+    width: 5.5%;
+    height: 7%;
+    display: flex;
+    float: left;
+}
+
+.botao {
+    background-color: transparent;
+    border: none;
+    margin-top: 0.8%;
+    margin-bottom: 0.5%;
+    margin-right: 2%;
+    width: 50%;
+    height: 50%;
+    float: right;
+    text-align: right;
+}
+
+button:hover {
+    transform: scale(1.02);
+    transition: all 0.5s;
+} 
+
+.dropdown-menu {
+    --bs-dropdown-color: #212529;
+    --bs-dropdown-bg: #004990;
+    --bs-dropdown-link-color: white;
+    --bs-dropdown-link-hover-color: white;
+    --bs-dropdown-link-hover-bg: #F77D0C;
+    --bs-dropdown-link-active-color: #fff;
+}
+
+.titulo2 {
+    grid-area: titulo2;
+    position: relative;
+    margin-top: 13%;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    text-align: center;
+    letter-spacing: -0.938889px;
+    color: #1A1A1A;
+    justify-content: center;
+    justify-items: center;
+}
+
+.botaomeio {
+    box-sizing: border-box;
+    background-color: transparent;
+    position: relative;
+    width: 142px;
+    height: 56px;
+    border: 2px solid #F77D0C;
+    border-radius: 6px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: -0.325px;
+    color: #F77D0C;
+}
+
+.p{
+    color: #767676;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.modal {
+    --bs-modal-zindex: 1055;
+    --bs-modal-width: 35%;
+    --bs-modal-padding: 1rem;
+    --bs-modal-color: black;
+    --bs-modal-bg: white ;
+    width: 100%;
+    height: 100%;
+}
+
+.foot-er {
+    padding-bottom: 5%;
+    padding-top: 4%;
+}
+
+.head-er {
+    float: right;
+    text-align: right;
+    padding-top: 2%;
+    padding-right: 2%;
+    color: black;
+}
+
+.btn-secondary {
+    --bs-btn-color: #F77D0C;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: #F77D0C;
+    --bs-btn-hover-color: #004990;
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-hover-border-color: #004990;
+    margin-right: 4%;
+    padding-right: 7%;
+    padding-left: 7%;
+}
+.btn-primary {
+    --bs-btn-bg: #F77D0C;
+    --bs-btn-border-color: #F77D0C;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #004990;
+    --bs-btn-hover-border-color: #004990;
+    margin-left: 4%;
+    padding-right: 7%;
+    padding-left: 7%;
+}
+
+.size {
+    font-size:x-small;
+    font-weight: bold;
+}
+
+.col-form-label {
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin-bottom: 0;
+    font-size: x-small;
+    line-height: 1.5;
+}
+
+.form-control-1 {
+    width: 60%;
+    margin-right: 2%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    float: left;
+}
+
+.form-control-2 {
+    width: 17%;
+    margin-right: 2%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    float: left;
+}
+
+.form-control-3 {
+    width: 98%;
+    margin-right: 2%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    float: left;
+}
+
+.form-control-4 {
+    width: 47.9%;
+    margin-right: 2%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    float: left;
+}
+
+.form-control-5 {
+    width: 47.9%;
+    margin-right: 2%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    float: right;
+}
+
+.fs-5 {
+    font-size: 1.25rem!important;
+    font-weight: bold;
+}
+
+.direita {
+    margin-right: 15%;
+}
+
+.esquerda {
+    margin-left: 10%;
+}
+
+.direita1 {
+    margin-right: 15%;
+}
+
+.esquerda1 {
+    margin-left: 26%;
+}
+
+.sair {
+    background-color: transparent;
+    border: transparent;
+    border-color: transparent;
+    color: white;
+}
+
+.modal-body1 {
+    position: relative;
+    padding: var(--bs-modal-padding);
+    float: center;
+    text-align: center;
+}
+
+
+
